@@ -47,7 +47,7 @@
         <section class="hero">
             <div class="container">            
                 <h1 class="title">Ефективні рішення для <br> вашого бізнесу</h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button type="button" data-modal-open class="hero-button">Замовити послугу</button>
             </div>
         </section>
         
@@ -112,9 +112,24 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="activity-list list">
-                    <li class="activity-item"><img src="./images/img1.jpg" alt="зображення людини, яка друкує текст" width="370"></li>
-                    <li class="activity-item"><img src="./images/img2.jpg" alt="зображення людини, яка тримає телефон" width="370"></li>
-                    <li class="activity-item"><img src="./images/img3.jpg" alt="зображення людини, у якої в пуках планшет" width="370"></li>
+                    <li class="activity-item">
+                        <div class="activity-item-wrap">
+                            <img src="./images/img1.jpg" alt="зображення людини, яка друкує текст" width="370">
+                            <p class="activity-top-text">Десктопні додатки</p>
+                        </div>                        
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-item-wrap">
+                            <img src="./images/img2.jpg" alt="зображення людини, яка тримає телефон" width="370">
+                            <p class="activity-top-text">Мобільні додатки</p>
+                        </div>                        
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-item-wrap">
+                            <img src="./images/img3.jpg" alt="зображення людини, у якої в пуках планшет" width="370">
+                            <p class="activity-top-text">Дизайнерські рішення</p>
+                        </div>                        
+                    </li>
                 </ul>
             </div>
         </section>
@@ -337,7 +352,20 @@
 
         </div>
                    
-    </footer>  
+    </footer> 
+    
+    
+     <!--Modal-->
+     <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="images/symbol-defs.svg#icon-close"></use>
+                </svg>  
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
