@@ -118,6 +118,8 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--black-color);  
+
+    transition: color 250ms var(--cubic);
 }
 
 .current::after {
@@ -129,13 +131,13 @@ img {
     border-radius: 2px;
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
 }
 
 .header-link:hover,
 .header-link:focus {
     color: var(--activation-color);
-    transition: 250ms  var(--cubic)
+    
 }
 .header-list .header-link.current {
     color: var(--activation-color);
@@ -159,13 +161,13 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color); 
+    transition: color 250ms var(--cubic), fill 250ms var(--cubic); 
 }
   
 .header-contacts:hover, 
 .header-contacts:focus{
     fill: var(--activation-color);
-    color: var(--activation-color);
-    transition: 250ms  var(--cubic)
+    color: var(--activation-color);  
 }
 
 .header-contacts-svg {
@@ -215,6 +217,8 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
+    transition: background-color 250ms var(--cubic);
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -229,7 +233,6 @@ img {
 .hero-button:hover,
 .hero-button:focus {
     background-color: #188CE8;
-    transition: 250ms  var(--cubic)
 }
 
 .feature-section { 
@@ -315,13 +318,12 @@ img {
 
 .activity-item {
     width: calc((100% - 60px) / 3)
-    
 } 
 
 .activity-item-wrap {
     position: relative;
-
 }
+
 .activity-top-text {
     position: absolute;
     bottom: 0px;   
@@ -401,26 +403,24 @@ img {
     align-items: center;
     justify-content: center;
     display: flex;
-    transition: background-color 250ms linear 
-
+    transition: background-color 250ms var(--cubic);
 }
 
 .team-social-link:hover,
 .team-social-link:focus {
     background-color: var(--activation-color);
-    transition: 250ms  var(--cubic);
+   
 }
 
 .team-svg {
     fill: #AFB1B8;
-    transition: fill 250ms linear 
+    transition: fill 250ms var(--cubic);
 }
 
 
 .team-social-link:hover .team-svg,
 .team-social-link:focus .team-svg {
-    fill: var(--bgn-color);
-    transition: 250ms  var(--cubic);
+    fill: var(--bgn-color); 
 }
 
 .clients-list {
@@ -442,8 +442,9 @@ img {
     align-items: center;
     justify-content: center;
     display: flex;
-    transition: border 250ms linear ;
+    transition: border 250ms var(--cubic);
 }
+
 .clients-link:hover,
 .clients-link:focus {
     border: 1px solid #2196F3; 
@@ -452,12 +453,11 @@ img {
 .clients-link:hover .client-svg,
 .clients-link:focus .client-svg {
     fill: var(--activation-color); 
-    transition: 250ms  var(--cubic);
 }   
 
 .client-svg {
     fill:  #AFB1B8;
-    transition: fill 250ms linear 
+    transition: fill 250ms var(--cubic);
 }
 
 /*------------------------------footer ----------------------------*/
@@ -503,12 +503,13 @@ img {
     letter-spacing: 0.03em;
     color: var(--bgn-color);
     font-style: normal;
+    transition: color 250ms var(--cubic);
 }
 
 .map-link:hover,
 .map-link:focus {
     color: var(--activation-color);
-    transition: 250ms  var(--cubic);
+    
 }
 
 .contacts {
@@ -517,12 +518,12 @@ img {
     letter-spacing: 0.03em;
     color: var(--contacts-color);  
     font-style: normal;
+    transition: color 250ms var(--cubic);
 }
 
 .contacts:hover,
 .contacts:focus  {
     color: var(--activation-color);
-    transition: 250ms  var(--cubic);
 }
 
 .follow-section {
@@ -560,18 +561,18 @@ img {
     justify-content: center;
     display: flex;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms linear; 
+    transition: background-color 250ms var(--cubic); 
     
 }
 .follow-section-link:hover,
 .follow-section-link:focus {
     background-color:var(--activation-color) ;
-    transition: 250ms  var(--cubic);
+   
 }
 .follow-svg {
     fill: var(--bgn-color);
-    transition: fill 250ms linear; 
 }
+
 
 /*------------------------------portfolio-main----------------------------*/
 
@@ -611,16 +612,15 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    background-color:var(--bgn-section-color) ;
-   
+    background-color:var(--bgn-section-color);
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
     color: var(--bgn-color);
     background-color: var(--activation-color); 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: 250ms  var(--cubic)
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);   
 }
 
 .portfolio-list {
@@ -639,13 +639,12 @@ img {
 
 .portfolio-item-link{
     display: block;
-    
+    transition: box-shadow 250ms var(--cubic);   
 }
 
 .portfolio-item-link:hover,
 .portfolio-item-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: 250ms  var(--cubic)
 }
 
 .portfolio-top-wrap {
@@ -672,10 +671,8 @@ img {
     background-color: rgba(33, 150, 243, 0.9);
     height: 100%;
     transform: translateY(100%);
-    transition: transform 250ms linear;
-    overflow: auto;
-
-    
+    transition: transform 250ms var(--cubic);
+    overflow: auto; 
 }
 
 .portfolio-project-name {
@@ -721,7 +718,7 @@ img {
     background-color:  rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
-    transition: opacity 250ms linear, visibility 250ms linear;
+    transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 }
 .modal {
     width: 528px;
@@ -732,12 +729,12 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
-    transition: 250ms  var(--cubic);
+    transition: transform 250ms var(--cubic);
 }
 
 .backdrop.is-hidden .modal {
     transform:translate(-50%,-50%) scale(0);   
-    transition: 250ms var(--cubic);
+    transition: transform 250ms var(--cubic);
 }
 
 .modal-close {
@@ -752,14 +749,13 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;    
+    cursor: pointer;  
+    transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);  
 }
+
 .modal-close:hover {
     fill: var(--bgn-color);
     background-color: var(--activation-color);
-    transition: 250ms var(--cubic);
-
-
 }
 
 .backdrop.is-hidden {
